@@ -5,26 +5,84 @@
       RAINBOWSIX
     </title>
     <meta charset="utf-8">
+    <style>
+      a {
+        color:black;
+        text-decoration-line:none;
+      }
+      #list {
+        border-right: 1px solid gray;
+        width: 140px;
+        display: grid;
+        grid-area: list;
+        padding-bottom: 650px;
+      }
+
+      #main {
+        display: grid;
+        grid-area: main;
+        padding-left: 10px;
+      }
+
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 3fr;
+        grid-template-rows: 800px auto;
+        grid-template-areas: "list main";
+      }
+
+      h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+    }
+    
+    #active {
+      color: red;
+    }
+
+    .saw {
+      color: gray;
+    }
+
+    #grid ol {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    #topattack {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    } 
+
+    body  {
+    margin: 0;
+    }
+
+
+      
+    </style>
   </head>
 
   <body>
-    <h1><a href="index.html">RAINBOW SIX SIEGE</a></h1>
-    <div>
+    <h1><a href="index.html" class="title_main">RAINBOW SIX SIEGE</a></h1>
+    <div id="grid">
       <!--------목차-------->
-      <div>
-        <h3>ATTACKER</h3>
+      <div id="list">
+        <h3 id="topattack">ATTACKER</h3>
         <ol>
-          <li><a href="1.html">SLEDGE</a></li>
-          <li><a href="2.html">THATCHER</a></li>
+          <li><a href="1.html" class="saw">SLEDGE</a></li>
+          <li><a href="2.html" class="saw">THATCHER</a></li>
         </ol>
         <h3>DEFANDER</h3>
         <ol>
-          <li><a href="3.html">SMOKE</a></li>
-          <li><a href="mute.html">MUTE</a></li>
+          <li><a href="3.html" class="saw">SMOKE</a></li>
+          <li><a href="mute.html" class="saw" id="active">MUTE</a></li>
         </ol>
       </div>
       <!--------본문-------->
-      <div>
+      <div id="main">
         <h2><a href="https://namu.wiki/w/%EB%AE%A4%ED%8A%B8(%EB%A0%88%EC%9D%B8%EB%B3%B4%EC%9A%B0%20%EC%8B%9D%EC%8A%A4%20%EC%8B%9C%EC%A6%88)">MUTE</a></h2>
         <img src="https://ubistatic-a.akamaihd.net/0058/prod/assets/images/large-mute.ae51429f.png
         " width="350px">
@@ -32,5 +90,14 @@
         <p>MUTE의 주무기로는 SMG인 MP5K와 샷건인 M590A1을 사용하고 원격제어폭탄(c4)와 방탄카메라를 유동적으로 사용합니다.</p>
       </div>
     </div>
+    <div id="disqus_thread"></div>
+    <script>
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://test-fxibcji9g8.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+    </script>
   </body>
 </html>
