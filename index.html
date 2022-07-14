@@ -20,25 +20,66 @@
   h1 {
     font-size: 50px;
     text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0px;
+  }
+  body {
+    margin: 0px;
+  }
+
+  #tx {
+    border-right: 1px solid gray;
+    width: 140px;
+    display: grid;
+    grid-area: sidebar;
+    padding-bottom: 650px;
+  }
+
+  #dx {
+    display: grid;
+    grid-area: main;
+  }
+
+  #grid ol {
+    margin: 0;
+    padding-left: 24px;
+  }
+
+  #topattack {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #grid {
+    display: grid;
+    grid-template-columns: 150px 3fr;
+    grid-template-rows: 650px 1fr;
+    grid-template-areas: " sidebar main";
   }
 </style>
 </head>
 
 <body>
   <h1><a href="index.html">RAINBOW SIX SIEGE</a></h1>
-  <h3>ATTACKER</h3>
-  <ol>
-    <li><a href="1.html">SLEDGE</a></li>
-    <li><a href="2.html">THATCHER</a></li>
-  </ol>
-  <h3>DEFANDER</h3>
-  <ol>
-    <li><a href="3.html">SMOKE</a></li>
-  </ol>  
-  <!--여기서부터 본문-->
-  <img src="https://www.idgcdn.com.au/article/images/740x500/dimg/rainbow-six.jpg" width="600px
-  ">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/SHDOf3Av_HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div id="grid">
+    <div id="tx">
+      <h3 id="topattack">ATTACKER</h3>
+      <ol>
+        <li><a href="1.html">SLEDGE</a></li>
+        <li><a href="2.html">THATCHER</a></li>
+      </ol>
+      <h3>DEFANDER</h3>
+      <ol>
+        <li><a href="3.html">SMOKE</a></li>
+      </ol>  
+    </div>
+    <!--여기서부터 본문-->
+    <div id="dx">
+    <img src="https://www.idgcdn.com.au/article/images/740x500/dimg/rainbow-six.jpg" width="600px
+    ">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SHDOf3Av_HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
   <p>
     레인보우 식스의 오퍼레이터를 소개하는곳입니다
   </p>
