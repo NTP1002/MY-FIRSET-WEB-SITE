@@ -1,127 +1,128 @@
 <!doctype html>
 <html>
-  <head>
-    <title>RAINBOWSIX</title>
-    <meta charset="utf-8">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4F3HBH0T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-QP4F3HBH0T');
-</script>
-<style>
+<head>
+  <title>RAINBOWSIX</title>
+  <meta charset="utf-8">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QP4F3HBH0T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-                  /*미디어쿼리 750px 이상*/
+    gtag('config', 'G-QP4F3HBH0T');
+  </script>
+  <style>
+    /*미디어쿼리 750px 이상*/
 
-  @media(min-width:750px){
-    a {
-    color:black;
-    text-decoration-line:none;
-    }
-    h1 {
-      font-size: 50px;
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0px;
-    }
+    @media(min-width:750px) {
+      a {
+        color: black;
+        text-decoration-line: none;
+      }
 
-    body {
-      margin: 0px;
-    }
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+      }
 
-    #tx {
-      border-right: 1px solid gray;
-      width: 140px;
-      display: grid;
-      grid-area: sidebar;
-      padding-bottom: 650px;
-    }
+      body {
+        margin: 0px;
+      }
 
-    #dx {
-      display: grid;
-      grid-area: main;
-    }
+      #tx {
+        border-right: 1px solid gray;
+        width: 140px;
+        display: grid;
+        grid-area: sidebar;
+        padding-bottom: 650px;
+      }
 
-    #grid ol {
-      margin: 0;
-      padding-left: 24px;
-    }
+      #dx {
+        display: grid;
+        grid-area: main;
+      }
 
-    #topattack {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
+      #grid ol {
+        margin: 0;
+        padding-left: 24px;
+      }
 
-    #grid {
-      display: grid;
-      grid-template-columns: 150px 3fr;
-      grid-template-rows: 662px 1fr;
-      grid-template-areas: "sidebar main";
-    }
+      #topattack {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
 
-    #disqus_thread{
-      margin: 100px;
-    }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 3fr;
+        grid-template-rows: 662px 1fr;
+        grid-template-areas: "sidebar main";
+      }
 
-    #dx img {
-      padding-bottom: 10px;
-    }
+      #disqus_thread {
+        margin: 100px;
+      }
 
-    body  {
-      margin: 0;
-    }
-  }
+      #dx img {
+        padding-bottom: 10px;
+      }
 
-                  /*미디어쿼리 750px 이상*/
-
-  @media(max-width:750px){
-    a {
-    color:black;
-    text-decoration-line:none;
+      body {
+        margin: 0;
+      }
     }
 
-    h1 {
-      font-size: 50px;
-      text-align: center;
-      border-bottom: 1px solid gray;
-      margin: 0px;
-    }
+    /*미디어쿼리 750px 이상*/
 
-    #attacker {
-      border-right:1px solid black;
-      display: grid;
-      grid-area: attacker;
-      margin-bottom: 0px;
-    }
+    @media(max-width:750px) {
+      a {
+        color: black;
+        text-decoration-line: none;
+      }
 
-    #defander{
-      display: grid;
-      grid-area: defander;
-    }
+      h1 {
+        font-size: 50px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0px;
+      }
 
-    #tx {
-      display: grid;
-      grid-area: topbar;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "attacker defander";
-    }
+      #attacker {
+        border-right: 1px solid black;
+        display: grid;
+        grid-area: attacker;
+        margin-bottom: 0px;
+      }
 
-    #dx {
-      display: grid;
-      grid-area: main1;
-    }
+      #defander {
+        display: grid;
+        grid-area: defander;
+      }
 
-    #grid {
-      display: grid;
-      grid-template-rows: 300 1fr;
-      grid-template-areas: "topbar" "main1";
-    }
+      #tx {
+        display: grid;
+        grid-area: topbar;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "attacker defander";
+      }
 
-  }
-</style>
+      #dx {
+        display: grid;
+        grid-area: main1;
+      }
+
+      #grid {
+        display: grid;
+        grid-template-rows: 300 1fr;
+        grid-template-areas: "topbar""main1";
+      }
+
+    }
+  </style>
 </head>
 
 <body>
@@ -141,13 +142,15 @@
           <li><a href="3.html">SMOKE</a></li>
           <li><a href="mute.html">MUTE</a></li>
         </ol>
-      </span>  
+      </span>
     </div>
     <!--여기서부터 본문-->
     <div id="dx">
       <img src="https://www.idgcdn.com.au/article/images/740x500/dimg/rainbow-six.jpg" width="600px
       ">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/SHDOf3Av_HI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SHDOf3Av_HI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
       <p>
         레인보우 식스의 오퍼레이터를 소개하는곳입니다
       </p>
@@ -155,15 +158,17 @@
     </div>
   </div>
   <div id="disqus_thread"></div>
-    <script>
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://test-fxibcji9g8.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <script>
+    (function () { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://test-fxibcji9g8.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+      Disqus.</a></noscript>
 </body>
 </p>
+
 </html>
