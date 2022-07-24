@@ -13,64 +13,113 @@
   gtag('config', 'G-QP4F3HBH0T');
 </script>
 <style>
-  a {
+
+                  /*미디어쿼리 750px 이상*/
+
+  @media(min-width:750px){
+    a {
     color:black;
     text-decoration-line:none;
-  }
-  h1 {
-    font-size: 50px;
-    text-align: center;
-    border-bottom: 1px solid gray;
-    margin: 0px;
-  }
-  body {
-    margin: 0px;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    #tx {
+      border-right: 1px solid gray;
+      width: 140px;
+      display: grid;
+      grid-area: sidebar;
+      padding-bottom: 650px;
+    }
+
+    #dx {
+      display: grid;
+      grid-area: main;
+    }
+
+    #grid ol {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    #topattack {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    #grid {
+      display: grid;
+      grid-template-columns: 150px 3fr;
+      grid-template-rows: 662px 1fr;
+      grid-template-areas: "sidebar main";
+    }
+
+    #disqus_thread{
+      margin: 100px;
+    }
+
+    #dx img {
+      padding-bottom: 10px;
+    }
+
+    body  {
+      margin: 0;
+    }
   }
 
-  #tx {
-    border-right: 1px solid gray;
-    width: 140px;
-    display: grid;
-    grid-area: sidebar;
-    padding-bottom: 650px;
-  }
+                  /*미디어쿼리 750px 이상*/
 
-  #dx {
-    display: grid;
-    grid-area: main;
-  }
+  @media(max-width:750px){
+    a {
+    color:black;
+    text-decoration-line:none;
+    }
 
-  #grid ol {
-    margin: 0;
-    padding-left: 24px;
-  }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      border-bottom: 1px solid gray;
+      margin: 0px;
+    }
 
-  #topattack {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+    #attacker {
+      border-right:1px solid black;
+      display: grid;
+      grid-area: attacker;
+      margin-bottom: 0px;
+    }
 
-  #grid {
-    display: grid;
-    grid-template-columns: 150px 3fr;
-    grid-template-rows: 662px 1fr;
-    grid-template-areas: "sidebar main";
-  }
+    #defander{
+      display: grid;
+      grid-area: defander;
+    }
 
-  #disqus_thread{
-    margin: 100px;
-  }
-  
-  #dx img {
-    padding-bottom: 10px;
-  }
+    #tx {
+      display: grid;
+      grid-area: topbar;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "attacker defander";
+    }
 
-  body  {
-    margin: 0;
-  }
+    #dx {
+      display: grid;
+      grid-area: main1;
+    }
 
-  @media(max-width:800px){
-    
+    #grid {
+      display: grid;
+      grid-template-rows: 300 1fr;
+      grid-template-areas: "topbar" "main1";
+    }
+
   }
 </style>
 </head>
@@ -79,16 +128,20 @@
   <h1><a href="index.html">RAINBOW SIX SIEGE</a></h1>
   <div id="grid">
     <div id="tx">
-      <h3 id="topattack">ATTACKER</h3>
-      <ol>
-        <li><a href="1.html">SLEDGE</a></li>
-        <li><a href="2.html">THATCHER</a></li>
-      </ol>
-      <h3>DEFANDER</h3>
-      <ol>
-        <li><a href="3.html">SMOKE</a></li>
-        <li><a href="mute.html">MUTE</a></li>
-      </ol>  
+      <span id="attacker">
+        <h3 id="topattack">ATTACKER</h3>
+        <ol>
+          <li><a href="1.html">SLEDGE</a></li>
+          <li><a href="2.html">THATCHER</a></li>
+        </ol>
+      </span>
+      <span id="defander">
+        <h3>DEFANDER</h3>
+        <ol>
+          <li><a href="3.html">SMOKE</a></li>
+          <li><a href="mute.html">MUTE</a></li>
+        </ol>
+      </span>  
     </div>
     <!--여기서부터 본문-->
     <div id="dx">
