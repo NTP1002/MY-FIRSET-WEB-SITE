@@ -16,3 +16,16 @@ a {
   color:white;
   text-decoration: unset;
 }
+
+.FA18img {
+  height: 500px;
+  grid-area: hornetimg;
+}
+
+.superhornet {
+  grid-area: hornettext;
+}
+
+.superhornetspan {
+  grid-template-areas: "hornetimg hornettext";
+}
