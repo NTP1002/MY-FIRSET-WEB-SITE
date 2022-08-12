@@ -1,0 +1,18 @@
+.navbar {
+  display: flex; justify-content: start;
+  background: rgb(73, 78, 76); padding: 22px; color: white;
+}
+
+.navimg {
+  height: 60px;
+}
+
+.navtext {
+  padding-top: 10px; padding-right: 10px; padding-left: 10px;
+  font-size: 25px; 
+}
+
+a {
+  color:white;
+  text-decoration: unset;
+}
